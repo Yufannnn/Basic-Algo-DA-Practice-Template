@@ -15,6 +15,7 @@ def reverse_list(head):
 
     return prev
 
+
 def print_list(head):
     current = head
     while current:

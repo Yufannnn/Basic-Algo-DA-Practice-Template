@@ -1,6 +1,6 @@
-def bfs(graph, start_node, visited):
-    queue = [start_node]
-    visited.append(start_node)
+def bfs(graph, start, visited):
+    queue = [start]
+    visited.append(start)
 
     while queue:
         curr = queue.pop(0)

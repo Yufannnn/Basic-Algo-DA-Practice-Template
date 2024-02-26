@@ -18,8 +18,6 @@ def in_order_traversal(root):
         in_order_traversal(root.right)
 
 
-
-
 def main():
     # Define some test cases
     test_cases = [
@@ -31,8 +29,7 @@ def main():
     # Loop through each test case and print the result of the in-order traversal
     for i, root in enumerate(test_cases):
         print(f"Test case {i + 1}:")
-        result = in_order_traversal(root)
-        print(result)
+        in_order_traversal(root)
 
 
 if __name__ == "__main__":

@@ -22,6 +22,7 @@ class UnionFind:
             self.parent[root_y] = self.parent[x]
             self.rank[root_x] += self.rank[root_y]
 
+
 def main():
     # Create a UnionFind object with 5 elements
     uf = UnionFind(5)

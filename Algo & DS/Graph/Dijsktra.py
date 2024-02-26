@@ -23,6 +23,7 @@ def dijkstra(graph, start):
 
     return distances
 
+
 def main():
     # Define a more complex sample graph represented as an adjacency list
     graph = {

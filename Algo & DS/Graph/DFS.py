@@ -1,15 +1,16 @@
-def dfs(graph, start_node, visited):
-    stack = [start_node]
-    visited.append(visited)
+def dfs(graph, start, visited):
+    stack = [start]
+    visited.append(start)
 
     while stack:
-        current_node = stack.pop()
-        print(current_node)
+        curr = stack.pop()
+        print(curr)
 
-        for neighbor in graph[current_node]:
+        for neighbor in graph[curr]:
             if neighbor not in visited:
                 stack.append(neighbor)
                 visited.append(neighbor)
+
 
 def main():
     # Define a more complex sample graph represented as an adjacency list
@@ -31,6 +32,7 @@ def main():
 
     # Call the BFS function and print the result
     dfs(graph, start_node, [])
+
 
 if __name__ == "__main__":
     main()
